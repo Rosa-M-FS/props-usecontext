@@ -8,8 +8,8 @@ const Result = () => {
     return (
         <div className={style.result}>
             <h1>Resultado</h1>
-            <p>Números seleccionados: {numbers.length > 0 ? numbers.join(" + ") : "Ninguno"}</p>
-            <p>Suma total: {getSum()}</p>
+            <p className={style.numbers}>Números seleccionados: {numbers.length > 0 ? numbers.join(" + ") : "Ninguno"}</p>
+            <p className={style.numbers}>Suma total: {getSum()}</p>
 
             {/* Botón de Reset */}
             <button onClick={resetCalculator} className={style.resetBtn}>Reset</button>

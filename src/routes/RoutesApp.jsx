@@ -4,7 +4,7 @@ import Result from "../pages/Result";
 import style from './RoutesApp.module.css'
 
 
-//Grupo
+
 const Layout = () => {
     return (
         <div className={style.container}>

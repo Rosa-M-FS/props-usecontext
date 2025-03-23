@@ -11,7 +11,8 @@ const Calculator = () => {
             <div className={style.screen}>{currentNumber !== null ? currentNumber : "0"}</div>
             <div className={style.buttons}>
                 {[...Array(10).keys()].map((num) => (
-                    <button key={num} onClick={() => addNumber(num)}>
+                    <button key={num} onClick={() => addNumber(num)}
+                    className={style.button}>
                         {num}
                     </button>
                 ))}

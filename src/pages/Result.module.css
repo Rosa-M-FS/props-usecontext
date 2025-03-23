@@ -9,28 +9,39 @@
 
 .resetBtn {
     margin: 10px 0;
+    width: 80px;
     padding: 10px;
-    font-size: 1rem;
-    background: rgb(32, 3, 3);
-    color: white;
+    font-size: 1.5rem;
+    background: #b3d1f1;
+    color: rgb(43, 12, 12);
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    width: 80px;
 }
 
 .resetBtn:hover {
-    background: darkred;
+    background: #0056b3;
 }
 
 .backLink {
     display: block;
     margin-top: 10px;
-    color: rgb(36, 12, 25);
-    text-decoration: none;
-    font-weight: bold;
+          font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
 }
 
 .backLink:hover {
-    text-decoration: underline;
+    color: #535bf2;
 }
+
+.numbers {
+    font-size: 1.2rem;   
+    font-weight: bold;   
+    color: #007bff;     
+    background-color: #f0f8ff;  
+    padding: 5px 10px;   
+    border-radius: 5px;   
+}
+
+

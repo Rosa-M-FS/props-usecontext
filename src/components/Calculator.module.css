@@ -23,16 +23,16 @@
     margin-bottom: 40px;
 }
 
-button {
+.button {
     padding: 10px;
     font-size: 1.5rem;
-    background: #007bff;
-    color: rgb(109, 24, 24);
+    background: #b3d1f1;
+    color: rgb(43, 12, 12);
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
-button:hover {
+.button:hover {
     background: #0056b3;
 }
