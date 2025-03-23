@@ -4,7 +4,7 @@ const CalculatorContext = createContext();
 
 export const CalculatorProvider = ({ children }) => {
     const [numbers, setNumbers] = useState([]);
-    const [currentNumber, setCurrentNumber] = useState(null);
+    const [currentNumber, setCurrentNumber] = useState("");
 
     const addNumber = (num) => {
         setNumbers([...numbers, num]);

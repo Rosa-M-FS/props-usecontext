@@ -2,14 +2,17 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Calculator from "../components/Calculator";
 import Result from "../pages/Result";
 import style from './RoutesApp.module.css'
+import { CalculatorProvider } from "../components/CalculatorProvider";
 
 
 
 const Layout = () => {
     return (
+
         <div className={style.container}>
             <Outlet /> {/* Aquí se renderizarán las páginas según la ruta */}
         </div>
+
     );
 };
 

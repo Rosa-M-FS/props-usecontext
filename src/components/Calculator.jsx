@@ -8,7 +8,9 @@ const Calculator = () => {
     return (
         <div className={style.calculator}>
             <h1>Calculadora</h1>
-            <div className={style.screen}>{currentNumber !== null ? currentNumber : "0"}</div>
+            <div className={style.screen}>
+                {currentNumber !== "" ? currentNumber:"0"}
+                </div>
             <div className={style.buttons}>
                 {[...Array(10).keys()].map((num) => (
                     <button key={num} onClick={() => addNumber(num)}
