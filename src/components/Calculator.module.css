@@ -37,3 +37,8 @@
 .button:hover {
     background: #0056b3;
 }
+.selected {
+    background: #d66afaeb; 
+    border: 3px solid #4b014e95; 
+    transform: scale(1.1); 
+}

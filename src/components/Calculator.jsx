@@ -14,7 +14,7 @@ const Calculator = () => {
             <div className={style.buttons}>
                 {[...Array(10).keys()].map((num) => (
                     <button key={num} onClick={() => addNumber(num)}
-                    className={style.button}>
+                    className={`${style.button} ${currentNumber === num? style.selected : ""}`}>
                         {num}
                     </button>
                 ))}
