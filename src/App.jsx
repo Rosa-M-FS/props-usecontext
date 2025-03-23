@@ -1,14 +1,12 @@
 import './App.css';
+import RoutesApp from "./routes/RoutesApp";
+import {CalculatorProvider} from "./components/CalculatorProvider";
+
 
 function App() {
   return (
     <CalculatorProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Calculator />} />
-          <Route path="/resultado" element={<Result />} />
-        </Routes>
-      </Router>
+      <RoutesApp />
     </CalculatorProvider>
   );
 }

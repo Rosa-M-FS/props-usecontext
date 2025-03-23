@@ -1,0 +1,36 @@
+.result {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resetBtn {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    background: rgb(32, 3, 3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80px;
+}
+
+.resetBtn:hover {
+    background: darkred;
+}
+
+.backLink {
+    display: block;
+    margin-top: 10px;
+    color: rgb(36, 12, 25);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.backLink:hover {
+    text-decoration: underline;
+}

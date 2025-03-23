@@ -1,14 +1,24 @@
-import { useContext } from "react"
+import { Link } from "react-router-dom";
+import { useCalculator } from "./CalculatorProvider";
+import style from './Calculator.module.css'
 
-const calculator = () =>{
-    const {addNumber,number} = useContext(CalculatorContext);
+const Calculator = () => {
+    const { addNumber, currentNumber } = useCalculator();
+
     return (
-        <div >
-            <h2>Calculadora</h2>
-            <div>
-                
+        <div className={style.calculator}>
+            <h1>Calculadora</h1>
+            <div className={style.screen}>{currentNumber !== null ? currentNumber : "0"}</div>
+            <div className={style.buttons}>
+                {[...Array(10).keys()].map((num) => (
+                    <button key={num} onClick={() => addNumber(num)}>
+                        {num}
+                    </button>
+                ))}
             </div>
+            <Link to="/resultado">Ver Resultado</Link>
         </div>
-    )
+    );
+};
 
-}
+export default Calculator;
